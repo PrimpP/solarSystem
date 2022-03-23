@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <base target="newSpace">
+        <title></title>
+        <script language="JavaScript">
+            function writeText(txt){
+                document.getElementById("desc").innerHTML=txt;
+            }
+            function dissolveText(txt){
+                document.getElementById("desc").innerHTML=txt;
+            }
+        </script>
+
+        <style>
+        body{
+            background-color: black;
+        }
+
+        h1{
+            text-align: center;
+            color: blue;
+            font-size: 50px;
+            text-shadow: 5px 5px 6px red;
+        }
+
+        #desc{
+            text-align: center;
+            color: #FFF;
+            font-family: Tahoma;
+            font-size: 18px;
+        }
+        </style>
+    </head>
+    <body>
+        <link rel="stylesheet" type="text/css">
+        <!--BANTOG, JOHN RASER-->
+        <!--DATE-->
+        <br> <br>
+        <h1>The Solar System</h1>
+        <br>
+
+        <div align="center">
+            <img src="Media/solorSystem.jpg" usemap="#solarSystem">
+            <map name="#solarSystem">
+                <area shape="poly" coords="69,96,68,83,76,65,98,41,128,32,155,36,201,16,224,17,218,37,179,77,179,93,170,114,129,139,92,137,39,162,23,160,26,142" href="saturn.html"
+                onMouseOver="writeText('The surface temperature of saturn is -100 degree celcious');"
+                onMouseOut="dissolveText('')">
+                <area shape="circle" coords="343,126,17" href="mercury.html"
+                onMouseOver="writeText('The surface temperature of mercury is 500 degree celcious');"
+                onMouseOut="dissolveText('')">
+                <area shape="rect" coords="239,220,366,338" href="earth.html"
+                onMouseOver="writeText('The surface temperature of earth is 40 degree celcious');"
+                onMouseOut="dissolveText('')">
+            </map>
+        </div>
+        <p id="desc"></p>
+    </body>
+
+</html>
